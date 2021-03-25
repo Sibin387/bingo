@@ -1,0 +1,74 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+.tile {
+  background-color: #fafafb;
+  box-shadow: 1px 4px 8px rgba(0,0,0,.15);
+  transition: all .3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 10px;
+}
+.tile.center-tile{
+  transform: scale(1.1, 1.1);
+  border-radius: 20px;
+  border: 3px solid yellow;
+}
+/* .tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  min-height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+
+  border: 4px saddlebrown dashed;
+  border-radius: 10px;
+
+  cursor: pointer;
+} */
+
+.tile--set {
+  background: khaki;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+
+  pointer-events: none;
+}
+.fireworks-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+
+  pointer-events: none;
+}
